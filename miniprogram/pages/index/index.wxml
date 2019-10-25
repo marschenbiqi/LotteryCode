@@ -1,0 +1,19 @@
+<view class="container">
+  <view class="img-container">
+    <image src="cloud://issue-uydy4.6973-issue-uydy4/background.jpg" />
+  </view>
+  <view class="text-container">
+    <text class="headline">欢迎来到</text>
+    <text class="title">漳州小程序·云开发城市技术圈</text>
+  </view>
+
+  <view class="btn-container">
+    <button bindgetuserinfo="Receive" form-type="submit" open-type="getUserInfo" bindtap="Subscribe" wx:if="{{!lotteryCode[0]}}">{{title}}
+    </button>
+    <button bindtap="Subscribe" form-type="submit" wx:else>{{lotteryCode[0].code}}</button>
+  </view>
+  <view class="hint-container">
+    <text wx:if="{{lotteryCode[0]}}">{{lotteryCode[0].code}}是您本次活动的幸运号码</text>
+    <text wx:if="{{lotteryCode[0]}}">交流过程中将会揭晓您是否是本次活动的幸运儿</text>
+  </view>
+</view>

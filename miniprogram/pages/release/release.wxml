@@ -1,0 +1,8 @@
+<view class="container">
+  <view class="number-container">
+    <text>{{number}}</text>
+  </view>
+  <view class="btn-container">
+    <button bindtap="start">开始抽取幸运号码</button>
+  </view>
+</view>
